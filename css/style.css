@@ -50,10 +50,8 @@ nav {
     height: 55rem;
     width: 100%;
     margin: 0;
-    background: url(../materials/fotos/nike-mind.png);
     object-fit: cover;
     object-position: center 100%;
-    
 }
 
 /*#dark {
