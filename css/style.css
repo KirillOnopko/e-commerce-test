@@ -8,10 +8,47 @@ body {
     margin: 0;
 }
 
+main {
+    margin: 0;
+}
+
+footer {
+    margin: 0;
+}
+
 #info {
+    display: flex;
     color: rgb(248, 248, 248); 
     background: rgb(19, 19, 19);
     height: 8rem;
+    font-size: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+}
+
+#info p {
+    font-size: 2.5rem;
+}
+
+#currentFact {
+    transition: opacity 0.1s;
+}
+
+.info-button {
+    width: 6rem;
+    height: 6rem;
+    background: rgb(19,19,19);
+    color: rgb(248,248,248);
+    border: 0;
+}
+
+.left-arrow {
+    transform: rotate(90deg);
+}
+
+.right-arrow {
+    transform: rotate(-90deg);
 }
 
 nav {
@@ -46,6 +83,8 @@ nav {
     height: 3rem;
 }
 
+
+
 #start-foto {
     height: 100rem;
     width: 100%;
@@ -54,23 +93,11 @@ nav {
     object-position: center 100%;
 }
 
-/*#dark {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,0.7);
-    inset: 0;
-    color: white;
-    font-size: 6rem;
-    font-weight: 700;
-    text-align: center;
-    font-family: "Plus Jakarta Sans", sans-serif;
-}*/
+
 
 #greeting-product {
     margin-left: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -94,6 +121,7 @@ nav {
     background: rgb(14, 14, 14);
     color: rgb(249, 249, 249);
     line-height: 4.7rem;
+    font-size: 3rem;
 } 
 
 
@@ -128,7 +156,7 @@ nav {
 
 .shop-foto {
     width: 100%;
-    height: 35rem;
+    height: 50rem;
     margin: 0;
     object-fit: cover;
     object-position: 80%;
@@ -148,3 +176,275 @@ nav {
     font-weight: 550;
 }
 
+#slogan {
+    margin-top: 5rem;
+    background-image: url(../materials/fotos/slogan-foto.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40rem;
+    position: relative;
+}
+
+#dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    inset: 0;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#dark h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+#dark p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 5rem;
+    margin-left: 5%;
+    margin-top: 5rem;
+}
+
+#catalogue-buttons {
+    margin: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+    display: flex;
+}
+
+.catalogue-button {
+    flex: 1; /* ВСЕГДА ДЕЛИТ ПРОСТРАНСТВО */
+    margin: 0;
+    height: 12.5rem;
+    border: 0;
+    background: rgb(248, 248, 248);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 3rem;
+    color: gray;
+    border-bottom: 0.5rem gray solid;
+    transition: color 0.3s;
+}
+
+.active-catalogue-button {
+    color: black;
+    border-bottom: 0.5rem solid;
+}
+
+#catalogue-men {
+    margin-top: 3rem;
+    gap: 2.5rem;
+    overflow-x: scroll;
+    padding-left: 5%;
+    padding-right: 5%;
+    scrollbar-width: none;
+    transition: opacity 0.3s;
+    margin-bottom: 3rem;
+}
+
+#catalogue-women {
+    margin-top: 3rem;
+    gap: 2.5rem;
+    overflow-x: scroll;
+    padding-left: 5%;
+    padding-right: 5%;
+    scrollbar-width: none;
+    transition: opacity 0.3s;
+    margin-bottom: 3rem;
+}
+
+#catalogue-women .parent-foto {
+    background: rgb(222, 1, 156)
+}
+
+.parent-foto {
+    width: 45rem;
+    height: 50rem;
+    flex-shrink: 0;
+    position: relative;
+    background: rgb(1,22,222);
+}
+
+.catalogue-card-foto {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    width: 45rem;
+    height: 50rem;
+}
+
+.shop-cart {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    height: 6rem;
+    width: 6rem;
+    padding: 0;
+}
+
+.shopping-cart-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+#placeholder {
+    height: 50rem;
+}
+
+.name-with-rating {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    /*margin-left: 0.1rem;*/
+}
+
+.name-of-product {
+    width: 27.5rem;
+    margin-bottom: 1rem;
+}
+
+.rating p {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0;
+}
+
+.rating p svg {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.price {
+    font-size: 2.8rem;
+    color: rgb(132, 132, 132);
+    margin-top: 0;
+    /*margin-left: 0.1rem;*/
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+}
+
+.active-catalogue {
+    display: flex;
+}
+
+.inactive-catalogue {
+    display: none;
+}
+
+hr {
+    margin-bottom: 5rem;
+}
+
+#final-video {
+    width: 100%;
+    height: 37rem;
+    margin: 0;
+}
+
+#newsletter {
+    height: 10rem;
+    margin: 0;
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(40, 67, 40);
+    align-items: center;
+    text-decoration: none;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#newsletter p {
+    margin: 0;
+    font-size: 3rem;
+
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+#newsletter svg {
+    margin: 0;
+}
+
+.dropdown-list {
+    display: flex;
+    width: 100%;
+    background: rgb(31, 31, 31);
+    color: rgb(244, 244, 244);
+    justify-content: space-between;
+    border: 0;
+    margin: 0;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 3rem;
+}
+
+.dropdown-list svg {
+    transition: transform 0.3s;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    background: rgb(31,31,31);
+    transition: grid-template-rows 0.3s;
+}
+
+.in-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding-left: 5%;
+    font-size: 3rem;
+    gap: 1rem;
+    color: rgb(120,120,120);
+}
+
+.in-wrapper a {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+}
+
+.is-open {
+    grid-template-rows: 1fr;
+}
+
+.icon-open {
+    transform: rotate(180deg);
+}
+
+.payment-foto {
+    width: 12rem;
+    height: 8rem;
+
+}
+
+#in-wrapper-payment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#in-wrapper-readMe {
+    padding-right: 5%;
+}
