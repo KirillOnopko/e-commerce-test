@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en"> <!-- ПОМЕНЯЙ НА EN-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,19 @@
 <body>
     <header>
         <div id="info">
-            ТУТ ИНФА И ПРЕИМУЩЕСТВА
-            <!-- ПОДУМАЙ КАК ОНО УСТРОЕНО // ЕСТЬ ЛИ ВСТРОЕННОЕ -->
+            <button class="info-button" id="left-arrow">
+                <svg class="left-arrow" width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <p id="currentFact">
+                
+            </p>
+            <button class="info-button" id="right-arrow">
+                <svg class="right-arrow" width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
         <nav>
             <img id="logo" src="materials/icons/logo.png" alt="company logo">
@@ -47,7 +58,7 @@
                 <a href="#"><img src="materials/fotos/winter-sport.jpg" alt="" id="winter-sport" class="shop-foto"></a>
                 <h4>Winter Sports</h4>
                 <p>Apparel and equipment built for cold-weather performance.</p>
-                <a href="#" class="shop-link">MORE</a>
+                <a href="#" class="shop-link" id="winter-card">MORE</a>
             </div>
             <div class="product-topic">
                 <a href="#"><img id="accessories" class="shop-foto" src="materials/fotos/accessories.jpg" alt=""></a>
@@ -56,9 +67,258 @@
                 <a href="#" class="shop-link">MORE</a>
             </div>
         </div>
+        <div id="slogan">
+            <div id="dark">
+                <h3>SIMPLE IDEAS, BETTER GEAR</h3>
+                <p>We believe the best solutions are often the simplest ones — found in nature, built into everything we make.</p>
+            </div>
+        </div>
+        <h1>
+            EXPLORE MORE
+        </h1>
+        <div id="catalogue-buttons">
+            <button class="catalogue-button active-catalogue-button" id="men-catalogue-button">
+                Men
+            </button>
+            <button class="catalogue-button" id="women-catalogue-button">
+                Women
+            </button>
+        </div>
+        <div id="catalogue-men" class="active-catalogue">
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+        </div>
+        <div id="catalogue-women" class="inactive-catalogue">
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+            <div class="catalogue-card">
+                <div class="parent-foto">
+                    <a href="#"><img class="catalogue-card-foto" src="" alt=""></a>
+                    <button class="shop-cart"><img class="shopping-cart-icon" src="materials/icons/shoppingCart.png" alt=""></button>
+                </div>
+                <div class="name-with-rating">
+                    <p class="name-of-product">NAME OF PRODUCT 123</p>
+                    <div class="rating">
+                        <p>
+                            5
+                            <svg viewBox="0 0 24 24" fill="yellow">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </p> 
+                    </div>
+                </div>
+                <p class="price">
+                    100,00€
+                </p>
+            </div>
+        </div>
+        <hr>
+        <video src="materials/video/bike-riding-video.mp4" id="final-video" autoplay muted loop></video>
     </main>
     <footer>
-        <!-- THIS WEBSITE IS COPY FROM ALLBIRDS -->
+        <a href="#" id="newsletter">
+            <p>Newsletter</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M2 6l10 7 10-7"/>
+            </svg>
+        </a>
+        <button class="dropdown-list" id="buttonSupport">
+            <p>Support</p>
+            <svg id="icon-support" width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="wrapper" id="wrapperSupport">
+            <div class="in-wrapper">
+                <a href="" class="link-in-wrapper">Newsletter</a>
+                <a href="" class="link-in-wrapper">FAQ</a>
+                <a href="" class="link-in-wrapper">Delivery</a>
+                <a href="" class="link-in-wrapper">Payment</a>
+                <a href="" class="link-in-wrapper">Account</a>
+                <a href="" class="link-in-wrapper">Giftcard</a>
+                <a href="" class="link-in-wrapper">Contact</a>
+            </div>
+        </div>
+        <button class="dropdown-list" id="buttonContact">
+            <p>Contact</p>
+            <svg id="icon-contact" width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="wrapper" id="wrapperContact">
+            <div class="in-wrapper">
+                My github profile is - ""
+            </div>
+        </div>
+        <button class="dropdown-list" id="buttonPayment">
+            <p>Payment</p>
+            <svg id="icon-payment" width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="wrapper" id="wrapperPayment">
+            <div class="in-wrapper" id="in-wrapper-payment">
+                <img class="payment-foto" src="materials/icons/paypal.jpg" alt="paypal">
+                <img class="payment-foto" src="materials/icons/mastercard.png" alt="mastercard">
+                <img class="payment-foto" src="materials/icons/visa.png" alt="visa">
+                <img class="payment-foto" src="materials/icons/apple-pay.png" alt="apple pay">
+                <img class="payment-foto" src="materials/icons/google-pay.png" alt="google pay">
+            </div>
+        </div>
+        <button class="dropdown-list" id="buttonReadMe">
+            <p>READ ME</p>
+            <svg id="icon-readMe" width="25" height="25" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="wrapper" id="wrapperReadMe">
+            <div class="in-wrapper" id="in-wrapper-readMe">
+                This website is a clone of the "allbirds.de" website. <br>
+                <br>
+                Some assets/materials were taken from the allbirds, nike and unsplash. <br>
+                <br>
+                Thank you for visiting my Website!
+                </div>
+        </div>
     </footer>
+</body>
+</html>
 </body>
 </html>
